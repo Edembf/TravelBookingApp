@@ -1,1 +1,22 @@
-# Travel Booking App User Story
+##Travel Booking App User Story
+*As a [Role], I want to [Action] so that [Benefit/Value].*
+
+---
+
+### 🔍 Context & Description
+Provide a brief summary of the feature and how it fits into the app flow.
+> **Example:** Enable users to register an account to secure their progress and data.
+
+### ✅ Acceptance Criteria (Definition of Done)
+- [ ] Field [Field Name] is mandatory.
+- [ ] Error message appears if [Failure Condition].
+- [ ] Data is persisted in [Local Storage/Database].
+- [ ] UI matches the design guidelines.
+
+### 🖼️ Evidence & Documentation
+- **Required File:** `userstories-[name]-evidence.png` (or jpg)
+
+### 🛠️ Technical Implementation Notes
+- API Endpoints: [e.g., /auth/register]
+- Components affected: [e.g., LoginScreen, SettingsToggle]
+- State Management: [e.g., Redux, Context API, Vuex]
