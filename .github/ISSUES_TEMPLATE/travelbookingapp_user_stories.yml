@@ -1,22 +1,33 @@
-## 📝 Travel Booking User Story Title
-*As a [Role], I want to [Action] so that [Benefit/Value].*
+# [STORY] : 📝 Travel Booking User Story Title
+**As a** [Role]  
+**I want to** [Action]  
+**So that** [Benefit/Value]
 
 ---
 
-### 🔍 Context & Description
-Provide a brief summary of the feature and how it fits into the app flow.
-> **Example:** Enable users to register an account to secure their progress and data.
+### 🔍 1. Description & Context
+Provide a brief summary of the feature. How does it fit into the app flow?
+*Example: Users need a secure way to access their private fitness data.*
 
-### ✅ Acceptance Criteria (Definition of Done)
-- [ ] Field [Field Name] is mandatory.
-- [ ] Error message appears if [Failure Condition].
-- [ ] Data is persisted in [Local Storage/Database].
-- [ ] UI matches the design guidelines.
+---
 
-### 🖼️ Evidence & Documentation
-- **Required File:** `userstories-[name]-evidence.png` (or jpg)
+### ✅ 2. Acceptance Criteria (Definition of Done)
+*What must be true for this task to be finished?*
+- [ ] Field [X] is mandatory (cannot be empty).
+- [ ] Error message "[Error Text]" appears if [Condition].
+- [ ] Data is saved in Local Storage/Database.
+- [ ] The "Sign Up" button redirect to the Home Screen upon success.
 
-### 🛠️ Technical Implementation Notes
-- API Endpoints: [e.g., /auth/register]
-- Components affected: [e.g., LoginScreen, SettingsToggle]
-- State Management: [e.g., Redux, Context API, Vuex]
+---
+
+### 🛠️ 3. Technical Implementation
+*Details for the developer:*
+- **Logic:** Use `localStorage.setItem()` for data persistence.
+- **Components:** `LoginView.js`, `AuthContext.js`.
+- **Validation:** Use Regex for email format checking.
+
+---
+
+### 🖼️ 4. Evidence & Documentation
+- **Required Filename:** `userstories-[name]-evidence.png`
+- **Status:** [Pending / Attached]
