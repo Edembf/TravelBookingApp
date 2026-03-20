@@ -1,44 +1,57 @@
-name: "📝 Travel Booking User Story Title"
+name: "📝 Travel Booking App User Story"
 description: "Template to develop and track app features based on User Stories"
-title: "[STORY]: <Title of the User Story>"
+title: "[STORY]: "
 labels: ["enhancement", "user-story"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## 📝 User Story Format
-        *As a [Role], I want to [Action] so that [Benefit/Value].*
+        ## ✍️ User Story Format
+        **As a** [Role], **I want to** [Action] **so that** [Benefit/Value].
 
   - type: textarea
     id: context-description
     attributes:
       label: "🔍 Context & Description"
-      placeholder: "Provide a brief summary of the feature and how it fits into the app flow."
-      value: "Example: Enable users to register an account to secure their progress and data."
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: acceptance-criteria
-    attributes:
-      label: "✅ Acceptance Criteria (Definition of Done)"
-      options:
-        - label: "Field [Field Name] is mandatory."
-        - label: "Error message appears if [Failure Condition]."
-        - label: "Data is persisted in [Local Storage/Database]."
-        - label: "UI matches the design guidelines."
-
-  - type: input
-    id: evidence-file
-    attributes:
-      label: "🖼️ Evidence & Documentation"
-      placeholder: "userstories-[name]-evidence.png"
+      description: "Provide a brief summary of the feature and how it fits into the app flow."
+      placeholder: "Example: As a user, I want to register an account to secure my meditation progress."
     validations:
       required: true
 
   - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "✅ Acceptance Criteria (Definition of Done)"
+      description: "What are the specific requirements for this story to be finished?"
+      placeholder: |
+        - [ ] Field [Name] is mandatory.
+        - [ ] Error message appears if [Condition].
+        - [ ] Data is persisted in Local Storage.
+        - [ ] UI matches the design guidelines.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: technical-check
+    attributes:
+      label: "🛠️ Technical Scope"
+      options:
+        - label: "Requires API Integration"
+          required: false
+        - label: "Requires Local Storage / Persistence"
+          required: false
+        - label: "Requires New UI Components"
+          required: false
+
+  - type: textarea
     id: technical-notes
     attributes:
-      label: "🛠️ Technical Implementation Notes"
+      label: "⚙️ Technical Implementation Notes"
       description: "API Endpoints, Components, State Management, etc."
-      placeholder: "e.g., /auth/register, Redux, Context API..."
+      placeholder: "e.g., Redux, Context API, /auth/register endpoint..."
+
+  - type: upload
+    id: evidence
+    attributes:
+      label: "🖼️ Evidence & Documentation"
+      description: "Upload your screenshots, wireframes, or evidence files here."
