@@ -1,33 +1,44 @@
-# [STORY] : 📝 Travel Booking User Story Title
-**As a** [Role]  
-**I want to** [Action]  
-**So that** [Benefit/Value]
+name: "📝 Travel Booking User Story Title"
+description: "Template to develop and track app features based on User Stories"
+title: "[STORY]: <Title of the User Story>"
+labels: ["enhancement", "user-story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 User Story Format
+        *As a [Role], I want to [Action] so that [Benefit/Value].*
 
----
+  - type: textarea
+    id: context-description
+    attributes:
+      label: "🔍 Context & Description"
+      placeholder: "Provide a brief summary of the feature and how it fits into the app flow."
+      value: "Example: Enable users to register an account to secure their progress and data."
+    validations:
+      required: true
 
-### 🔍 1. Description & Context
-Provide a brief summary of the feature. How does it fit into the app flow?
-*Example: Users need a secure way to access their private fitness data.*
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: "✅ Acceptance Criteria (Definition of Done)"
+      options:
+        - label: "Field [Field Name] is mandatory."
+        - label: "Error message appears if [Failure Condition]."
+        - label: "Data is persisted in [Local Storage/Database]."
+        - label: "UI matches the design guidelines."
 
----
+  - type: input
+    id: evidence-file
+    attributes:
+      label: "🖼️ Evidence & Documentation"
+      placeholder: "userstories-[name]-evidence.png"
+    validations:
+      required: true
 
-### ✅ 2. Acceptance Criteria (Definition of Done)
-*What must be true for this task to be finished?*
-- [ ] Field [X] is mandatory (cannot be empty).
-- [ ] Error message "[Error Text]" appears if [Condition].
-- [ ] Data is saved in Local Storage/Database.
-- [ ] The "Sign Up" button redirect to the Home Screen upon success.
-
----
-
-### 🛠️ 3. Technical Implementation
-*Details for the developer:*
-- **Logic:** Use `localStorage.setItem()` for data persistence.
-- **Components:** `LoginView.js`, `AuthContext.js`.
-- **Validation:** Use Regex for email format checking.
-
----
-
-### 🖼️ 4. Evidence & Documentation
-- **Required Filename:** `userstories-[name]-evidence.png`
-- **Status:** [Pending / Attached]
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: "🛠️ Technical Implementation Notes"
+      description: "API Endpoints, Components, State Management, etc."
+      placeholder: "e.g., /auth/register, Redux, Context API..."
